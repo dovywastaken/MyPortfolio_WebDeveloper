@@ -11,7 +11,7 @@
   <!--검사대상 지정 : 어떤 URL을 검사할 것인지?  -->
   	<web-resource-collection>
   		<web-resource-name>JSPBook</web-resource-name>
-  		<url-pattern>/10_2</url-pattern>
+  		<url-pattern>/10_3</url-pattern>
   		<http-method>GET</http-method>
   	</web-resource-collection>
   	<!-- 어느 그룹에게 권한을 줄 것인지? -->
