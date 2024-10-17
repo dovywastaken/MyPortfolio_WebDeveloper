@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	실습리스트
+	<h1>실습리스트</h1>
 	<p>
 		<h2>챕터 2 스크립트 태그</h2>
 		<a href="2_1">예제 2_1</a> 
@@ -112,5 +112,6 @@
 		<hr><hr>
 		<h2>챕터 10 시큐리티</h2>
 		<a href = "10_1">예제 10_1</a>
+		<a href = "10_2">예제 10_2</a>
 </body>
 </html>

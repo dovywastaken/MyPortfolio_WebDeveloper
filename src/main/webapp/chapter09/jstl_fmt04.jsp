@@ -8,9 +8,14 @@
 </head>
 <body>
 	
+	<%
+		String now1 = (String)request.getAttribute("date");
+		out.println(now1);
+	%>
+	
 	<jsp:useBean id="now" class="java.util.Date"/>
 	
-	<p> 한국 : <fmt:formatDate value="${now }" type="both" dateStyle="full" timeStyle ="full"/>
+	<p> 한국 : <fmt:formatDate value="${now}" type="both" dateStyle="full" timeStyle ="full"/>
 	<p> <fmt:timeZone value="America/New_York">
 		뉴욕 : <fmt:formatDate value="${now}" type="both" dateStyle="full" timeStyle="full"/>
 		</fmt:timeZone>
