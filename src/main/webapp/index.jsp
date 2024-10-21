@@ -68,12 +68,8 @@
 		<hr><hr>
 		
 		<h2>챕터 5 내장 객체</h2>
-		<form action = "5_1" method ="get">
-			<p> 아 이 디 : <input type = "text" name = "id">
-			<p> 비밀번호 : <input type = "text" name = "passwd">
-			<p> <input type = "submit" value ="전송">
-		</form>
-		
+
+		<a href ="5_1">예제 5_1</a>
 		<a href ="5_2">예제 5_2</a>
 		<a href ="5_3">예제 5_3</a>
 		<a href ="5_4">예제 5_4</a>
@@ -114,5 +110,10 @@
 		<a href = "10_1">예제 10_1</a>
 		<a href = "10_2">예제 10_2</a>
 		<a href = "10_3">예제 10_3</a>
+		
+		
+		<hr><hr>
+		<h2>챕터 11 예외처리</h2>
+		<a href = "11_1">예제 11_1</a>
 </body>
 </html>

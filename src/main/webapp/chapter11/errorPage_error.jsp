@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p> 아이디 : <%= request.getParameter("id") %>
-		<% String name = request.getParameter("name"); %>
-	<p> 이름 : <%= java.net.URLDecoder.decode(name) %>
+	오류가 발생했습니다!!!!!!!
 </body>
 </html>
