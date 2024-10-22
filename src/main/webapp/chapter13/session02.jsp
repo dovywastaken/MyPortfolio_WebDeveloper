@@ -14,6 +14,6 @@
 	
 	<p>설정된 세션의 속성 값 [1] : <%=id %> <br>
 	<p>설정된 세션의 속성 값 [2] : <%=pw %> <br>
-	<a href="chapter13/session03.jsp">☞ 세션 확인하러 가기 ☜</a>
+	<a href="../index.jsp">☞ 홈으로 돌아가기 ☜</a>
 </body>
 </html>
