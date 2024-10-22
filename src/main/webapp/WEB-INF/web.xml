@@ -2,6 +2,17 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   
   <!-- 필터 -->
+  <filter>
+  	<filter-name>Filter01</filter-name>
+  	<filter-class>chapter12.filter.AuthenFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>Filter01</filter-name>
+  	<url-pattern>/12_1_2</url-pattern>
+  </filter-mapping>
+  
+  
   
   <filter>
 	  <filter-name>Filter02</filter-name>

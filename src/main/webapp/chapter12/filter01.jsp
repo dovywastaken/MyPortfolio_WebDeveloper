@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="12_1" method="post">
+	<form action="12_1_2" method="post">
 		<p> 이름 : <input type="text" name="name">
 			<input type="submit" value="전송">
 	</form>

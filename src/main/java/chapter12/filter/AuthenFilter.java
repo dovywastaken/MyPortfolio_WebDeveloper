@@ -24,13 +24,16 @@ public class AuthenFilter implements Filter
 	{
 		System.out.println("Filter01.jsp 수행");
 		String name = req.getParameter("name");
+		System.out.println(name);
 		
 		if(name ==null || name.equals("")) 
 		{
 			resp.setCharacterEncoding("UTF-8");
 			resp.setContentType("text/html; charset = UTF8");
 			PrintWriter writer = resp.getWriter();
+			System.out.println(writer);
 			String message = "입력된 name 값은 null 입니다.";
+			System.out.println(message);
 			writer.println(message);
 			return;
 		}
