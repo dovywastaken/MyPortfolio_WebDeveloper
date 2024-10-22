@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Filter</title>
 </head>
 <body>
-	<form action="12_1" method="post">
-		<p> 이름 : <input type="text" name="name">
+	<form action="12_2_1" method="post">
+		<p> 이름 : <input type="text" name="id">
+		<p> 비밀번호 : <input type="text" name="pw">
 			<input type="submit" value="전송">
 	</form>
 </body>

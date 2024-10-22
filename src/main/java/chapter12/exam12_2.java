@@ -9,26 +9,21 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/12_1")
-public class exam12_1 extends HttpServlet
+@WebServlet("/12_2")
+public class exam12_2 extends HttpServlet
 {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
-		req.getRequestDispatcher("chapter12/filter01.jsp").forward(req, resp);
+		RequestDispatcher rd = req.getRequestDispatcher("chapter12/filter02.jsp");
+		rd.forward(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
-		
-		String name = req.getParameter("name");
-		
-		req.setAttribute("name1", name);
-		
-		RequestDispatcher rd = req.getRequestDispatcher("chapter12/filter01_result.jsp");
-		rd.forward(req, resp);
+
 	}
 
 }

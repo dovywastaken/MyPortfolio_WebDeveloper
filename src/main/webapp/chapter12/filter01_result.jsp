@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="12_1" method="post">
-		<p> 이름 : <input type="text" name="name">
-			<input type="submit" value="전송">
-	</form>
+	<%
+		String name = (String)request.getAttribute("name1");
+	%>
+	
+	<p>입력된 name 값 : <%=name %>
 </body>
 </html>
