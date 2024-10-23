@@ -1,57 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   
-  <!-- 필터 -->
-  <filter>
-  	<filter-name>Filter01</filter-name>
-  	<filter-class>chapter12.filter.AuthenFilter</filter-class>
-  </filter>
-  
-  <filter-mapping>
-  	<filter-name>Filter01</filter-name>
-  	<url-pattern>/12_1_2</url-pattern>
-  </filter-mapping>
-  
-  
-  
-  <filter>
-	  <filter-name>Filter02</filter-name>
-	  <filter-class>chapter12.filter.InitParamFilter</filter-class>
-	  <init-param>
-	  	<param-name>param1</param-name>
-	  	<param-value>manager</param-value>
-	  </init-param>
-	  <init-param>
-	  	<param-name>param2</param-name>
-	  	<param-value>1234</param-value>
-	  </init-param>
-  </filter>
-  
-  <filter-mapping>
-  	<filter-name>Filter02</filter-name>
-  	<url-pattern>/12_2_1</url-pattern>
-  </filter-mapping>
 
-
-
-  <filter>
-  	<filter-name>Filter02_2</filter-name>
-  	<filter-class>chapter12.filter.LogFileFilter</filter-class>
-  	<init-param>
-  		<param-name>filename</param-name>
-  		<param-value>c:\\logs\\monitor.log</param-value>
-  	</init-param>
-  </filter>
-  
-    <filter-mapping>
-  	<filter-name>Filter02_2</filter-name>
-  	<url-pattern>/12_2_1</url-pattern>
-  </filter-mapping>
-
-
-
-  
-  <!-- 예외처리 목록 -->
+    <!-- 예외처리 목록 -->
   <error-page>
 	  <error-code>500</error-code>
 	  	<location>/chapter11/errorCode_error.jsp</location>
@@ -61,9 +12,6 @@
   	  <exception-type>java.lang.Exception</exception-type>
 	  	<location>/chapter11/exceptionType_error.jsp</location>
   </error-page>
-  
-  
-  
   
   <!-- 어떤 그룹의? : 보안적용 그룹지정하기 -->
   <security-role>

@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="13_2" method="post">
+	<form action="14_1" method="post">
 		<p> 아이디 : <input type="text" name="id">
 		<p> 비밀번호 : <input type="text" name="pw">
-		<p>  <input type="submit" value="전송">
+		<p> <input type="submit" value="전송">
 	</form>
 </body>
 </html>

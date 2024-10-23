@@ -1,33 +1,34 @@
-package chapter13;
+package chapter14;
 
 import java.io.IOException;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/13_1")
-public class login2  extends HttpServlet
+@WebServlet("/14_1")
+public class exam14_1 extends HttpServlet
 {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
-	{
-		HttpSession session = req.getSession(false); //새로 세션 만들면 안되서 false
-		String id = (String)session.getAttribute("id");
-		System.out.println(id);
-		
-		req.getRequestDispatcher("chapter13/login2.jsp").forward(req, resp);
+	{	
+		req.getRequestDispatcher("chapter14/cookie01.jsp").forward(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
+		String user_id = req.getParameter("id");
+		String user_pw = req.getParameter("pw");
 		
+		req.setAttribute("id", user_id);
+		req.setAttribute("pw", user_pw);
+
+		req.getRequestDispatcher("chapter14/cookie01_result.jsp").forward(req, resp);
 	}
-
+	
 }
-

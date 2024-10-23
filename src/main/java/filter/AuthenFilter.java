@@ -1,4 +1,4 @@
-package chapter12.filter;
+package filter;
 
 import java.io.IOException;
 import java.io.PrintWriter;
